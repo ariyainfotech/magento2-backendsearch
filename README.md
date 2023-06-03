@@ -1,22 +1,48 @@
-# Magento 2 - Backend search by Metagento
+# Mage2 Module AriyaInfoTech BackendSearch
 
-When your website is big and you have many modules installed, sometimes you may want to find a menu item or a setting but you don’t remember where it is.
-It will take a lot of time because each module has many settings.
+    ``ariyainfotech/module-backendsearch``
 
-Magento provides a search box in backend, however it only gives results for Product, Customer, Order. It doesn’t search in Menu and Configuration, our module can help you with this.
+ - [Main Functionalities](#markdown-header-main-functionalities)
+ - [Installation](#markdown-header-installation)
+ - [Configuration](#markdown-header-configuration)
+ - [Specifications](#markdown-header-specifications)
+ - [Attributes](#markdown-header-attributes)
 
-Features:
 
-- Search menu items in backend
+## Main Functionalities
+Module Developed By Ariya InfoTech
 
-- Search setting fields in Configuration ( with link and path )
+## Installation
+\* = in production please use the `--keep-generated` option
 
-Installation via Composer:
+### Type 1: Zip file
 
-composer require metagento/backend-search-magento2:*
+ - Unzip the zip file in `app/code/AriyaInfoTech`
+ - Enable the module by running `php bin/magento module:enable AriyaInfoTech_BackendSearch`
+ - Apply database updates by running `php bin/magento setup:upgrade`\*
+ - Flush the cache by running `php bin/magento cache:flush`
 
-php bin/magento setup:upgrade
+### Type 2: Composer
 
-php bin/magento setup:static-content:deploy
+ - Make the module available in a composer repository for example:
+    - private repository `repo.magento.com`
+    - public repository `packagist.org`
+    - public github repository as vcs
+ - Add the composer repository to the configuration by running `composer config repositories.repo.magento.com composer https://repo.magento.com/`
+ - Install the module composer by running `composer require ariyainfotech/module-newsletterdiscountpro`
+ - enable the module by running `php bin/magento module:enable AriyaInfoTech_BackendSearch`
+ - apply database updates by running `php bin/magento setup:upgrade`\*
+ - Flush the cache by running `php bin/magento cache:flush`
 
-Any question, please visit https://www.metagento.com/magento-2-backend-search.html
+
+## Configuration
+
+
+
+
+## Specifications
+
+
+
+
+## Attributes
